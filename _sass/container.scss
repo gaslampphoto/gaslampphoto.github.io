@@ -1,0 +1,121 @@
+// sticky footer bits
+.site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh; 
+}
+.site-header,
+.site-footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0; 
+}
+.site-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; 
+}
+/*container css*/
+@media (min-width: 768px){
+    .container, .container-raw {
+    width: 750px;
+   }
+}
+@media (min-width: 992px){
+    .container, .container-raw {
+    width: 980px;
+    }
+}
+@media (min-width: 1200px){
+.container, .container-raw {
+    width: 1170px;
+    }
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    /*position relatuve needed for grid gallery*/
+    position: relative;
+}
+.container-raw {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px 0;
+}
+.section-alt{background-color:$alt-background-color;
+    padding-bottom:20px;
+    border-top: $alt-background-border;
+    border-bottom: $alt-background-border;
+}
+.section-main{
+    padding-bottom:20px;
+}
+.section-alt-top{
+    background-color:$alt-background-color;
+    border-bottom: $alt-background-border;
+    padding:20px 0;
+}
+.section-breadcrumb{
+    background-color:$alt-background-color;
+    border-bottom: $alt-background-border;
+    margin-bottom: 20px;
+    padding-top: 14px;
+}
+.row-container{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+}
+.half-column{
+width:750px;
+margin:4px 8px 14px 8px;
+}
+.one-third-column{
+    width: 750px;
+    margin:4px 8px 14px 8px;
+}
+.two-thirds-column{
+    width: 750px;
+    margin:4px 8px 14px 8px;
+}
+@media (min-width: 768px) {
+ .half-column, .one-third-column {
+    width: 344px;
+     }
+     .two-thirds-column{
+        width:344px;
+     }
+
+}
+@media (min-width: 992px) {
+ .half-column {
+    width: 450px;
+     }
+     .one-third-column{
+        width: 300px;
+     }
+     .two-thirds-column{
+        width:618px;
+     }
+}
+@media (min-width: 1200px) {
+ .half-column {
+    width: 550px;
+     }
+     .one-third-column{
+        width: 368px;
+     }
+     .two-thirds-column{
+        width: 740px;
+     }
+}

@@ -1,0 +1,12 @@
+# Site settings
+name: Gaslamp Photo Lab
+title: Gaslamp Photo Lab - (619) 696-8733 - 4569 Suite H, San Diego CA 92120
+description: Specializing in wedding and portrait printing, package printing, prints from digital files, one hour b&amp;w process and printing ,same day proofing for 120 film.
+# baseurl: ""
+markdown: kramdown
+permalinks: pretty
+exclude: ["package.json","rakefile.rb","README.md","s3_website.yml","node_modules","gulpfile.js"]
+
+
+# put a pound sign (#) in front of the line below to hide the message. Edit the mesaage as needed.
+message: We Will be Closed August 25-29 for a Mini Vacation!
